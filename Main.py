@@ -40,10 +40,13 @@ def Para_Uplims_Lolims(Para, Deviation, EoS, M_NS_max):
     for i in range(ParaLen):
         if Para_Uplims[i] > 0:
             Para_Uplims[i] = '+'
-            Para_Lolims[i] = '-'
         else:
             Para_Uplims[i] = '-'
+    for i in range(ParaLen):
+        if Para_Lolims[i] > 0:
             Para_Lolims[i] = '+'
+        else:
+            Para_Lolims[i] = '-'
     return [Para_Uplims, Para_Lolims, M_NS_max_Uplims, M_NS_max_Lolims]
 
 
@@ -157,4 +160,3 @@ WriteResult(Para_Lolims, file)
 
 # Beep when finished ---------------------------------------------------------------------------------------------------
 winsound.Beep(2500, 5000)
-
