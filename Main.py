@@ -143,6 +143,8 @@ file = open(ResultDir + 'chi2Set.txt', 'w+')
 WriteResult(chi2Set, file)
 file = open(ResultDir + 'ProbabilityDensity.txt', 'w+')
 WriteResult(ProbabilityDensity, file)
+file = open(ResultDir + 'Probability.txt', 'w+')
+WriteResult(Probability, file)
 
 file = open(ResultDir + 'index.txt', 'w+')
 WriteResult(index, file)
